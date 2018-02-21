@@ -1,0 +1,11 @@
+<div [style.height.px]="gridHeight" >
+  <mat-grid-list cols={{columnCount}} rowHeight="{{tileHeight}}px" (window:resize)="onResize($event)" gutterSize="2px">
+    <mat-grid-tile
+        *ngFor="let tile of tiles"
+        [colspan]="tile.cols"
+        [rowspan]="tile.rows"
+        [style.background]="tile.color" class="grid-image">
+      <img src={{tile.text}} (click)="presentImage(tile.text)">
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>

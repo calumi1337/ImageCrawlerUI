@@ -1,0 +1,6 @@
+<form class="search-form">
+  <mat-form-field class="search-bar-initial">
+    <input matInput [(ngModel)]="url" name="url" placeholder="Please provide an URL you want to collect images from" value="">
+  </mat-form-field>
+  <button mat-raised-button color="primary" class="button-search" (click)="searchImages()">Search</button>
+</form>

@@ -1,0 +1,13 @@
+.search-form {
+	height: 150px;
+}
+
+.button-search {
+	float: right;
+	margin-top: 10px;
+}
+
+.search-bar-initial {
+	width: calc(100% - 100px);
+	float:left;
+}
